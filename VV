@@ -1,0 +1,100 @@
+DevOps Lab Viva Questions and  Answers
+1.	What is DevOps?
+Answer: A culture and set of practices that combine software development (Dev) and IT operations (Ops) to shorten the development lifecycle and deliver high-quality software continuously.
+
+2.	What are the main goals of DevOps?
+Answer: Faster delivery of software, improved collaboration between teams, automation of repetitive tasks, reliable and scalable deployments.
+
+3.	What are the benefits of implementing DevOps?
+Answer: Faster releases, fewer deployment failures, better team communication, improved quality and stability.
+
+4.	What are the main stages of the DevOps lifecycle?
+Answer: Plan → Code → Build → Test → Release → Deploy → Operate → Monitor.
+
+5.	What are the key components or tools of a DevOps pipeline?
+Answer: Git (VCS), Jenkins (CI/CD), Docker (containers), Kubernetes (orchestration), Ansible/Terraform (IaC), Prometheus/Grafana (monitoring).
+
+6.	What is Continuous Integration, Continuous Delivery, and Continuous Deployment (CI/CD)?
+Answer: CI integrates code frequently; CD (Delivery) automatically tests and prepares code for release; CD (Deployment) automatically deploys code to production.
+
+7.	What is Git?
+Answer: A distributed version control system used to track code changes and collaborate with others.
+
+8.	What is the difference between Git and GitHub?
+Answer: Git is a version control tool, while GitHub is a cloud-based hosting service for Git repositories.
+
+9.	What is a repository in Git?
+Answer: A storage location for your project’s files and their version history.
+
+10.	What is the difference between a local and remote repository?
+Answer: Local is stored on your computer; remote is stored on a server (e.g., GitHub).
+
+11.	What are git clone, git pull, and git push used for?
+Answer: git clone copies a remote repo locally, git pull gets latest changes, git push sends your commits to remote.
+
+12.	What is a branch in Git?
+Answer: A separate line of development used to work on features independently.
+
+13.	How do you merge two branches?
+Answer: Use the command: git merge branch_name.
+
+14.	What is Jenkins?
+Answer: An open-source automation server used for building, testing, and deploying software.
+
+15.	How does Jenkins automate builds?
+Answer: It runs jobs triggered by code changes or schedules and automates build, test, and deploy tasks.
+
+16.	What are Jenkins pipelines?
+Answer: A series of automated steps defined in code to build, test, and deploy applications.
+
+17.	What are some common Jenkins plugins you’ve used?
+Answer: Git plugin, Docker plugin, Pipeline plugin, Slack notification plugin.
+
+18.	How can you trigger a Jenkins job automatically?
+Answer: Using webhooks, Git commits (poll SCM), or a scheduled cron job.
+
+19.	What are build agents or nodes in Jenkins?
+Answer: Machines that run the tasks (builds) defined by the Jenkins master.
+
+20.	What is a Jenkinsfile?
+Answer: A text file that defines the Jenkins pipeline as code, usually written in Groovy.
+
+21.	What do you mean by a CI/CD pipeline?
+Answer: An automated process that takes code from commit to deployment with testing and build stages in between.
+
+22.	What happens in each stage of a pipeline (Build, Test, Deploy)?
+Answer: Build compiles code, Test runs automated tests, Deploy moves code to production/staging.
+
+23.	What is Docker?
+Answer: A containerization platform that packages applications and dependencies together in lightweight containers.
+
+24.	What is a Docker image and a Docker container?
+Answer: An image is the blueprint of an application; a container is a running instance of that image.
+
+25.	What is the purpose of a Dockerfile?
+Answer: A script with instructions to build a Docker image.
+
+26.	How do you create a new Git repository and push it to GitHub?
+Answer: git init → git add . → git commit -m 'first commit' → git remote add origin <repo-url> → git push -u origin main.
+
+27.	How do you build a Docker image and run a container?
+Answer: docker build -t myapp . → docker run -d -p 8080:80 myapp.
+
+28.	How do you write a simple Jenkins pipeline?
+Answer: pipeline { stages { stage('Build'){steps{echo 'Building...'}} stage('Test'){steps{echo 'Testing...'}} stage('Deploy'){steps{echo 'Deploying...'}} } }
+
+29.	How do you deploy a web application using Docker?
+Answer: Create a Dockerfile, build the image, run the container with exposed ports, and access it via browser.
+
+30.	What is Ansible?
+Answer: An open-source automation tool for configuration management and deployment.
+
+31.	What are playbooks in Ansible?
+Answer: YAML files that define automation tasks for servers.
+
+32.	What is a YAML file and why is it used?
+Answer: A human-readable configuration file format used in tools like Ansible, Docker Compose, and Kubernetes.
+
+33.	What is Kubernetes?
+Answer: An open-source system for automating deployment, scaling, and management of containerized applications.
+
